@@ -10,7 +10,7 @@ var_complex = 2 + 0.5j
 var_expr = var_integer * 5 + var_float
 
 # Numberical Function
-var_rounded = round(var_expr, 2)
+var_rounded = ปัดเศษ(var_expr, 2)
 
 # String Declaration & Manipulation
 var_string = "Hello!"
@@ -18,10 +18,10 @@ var_string_d = var_string[2:]
 var_string_c = var_string + var_string_d
 
 # String Function
-print(var_string)
-print(var_string_d)
+แสดง(var_string)
+แสดง(var_string_d)
 
-var_string_l = len(var_string_c)
+var_string_l = ขนาด(var_string_c)
 
 # List Declaration & Manipulation
 squares = [1, 4, 9, 16, 25]
@@ -30,32 +30,32 @@ cubes = [1, 8, 27, 65, 125]
 cubes[3] = 4 ** 3
 
 # List Function
-cubes.append(216)
-cubes.append(7 ** 3)
-print(cubes)
+cubes.เพิ่ม(216)
+cubes.เพิ่ม(7 ** 3)
+แสดง(cubes)
 
 # Nested List
 list_a = ['a', 'b', 'c']
 list_n = [1, 2, 3]
 list_x = [a, n]
-print(list_x)
-print(list_x[0])
-print(list_x[0][1])
+แสดง(list_x)
+แสดง(list_x[0])
+แสดง(list_x[0][1])
 
 # If Statement
-if boolean_expr:
+ถ้า boolean_expr แล้ว
     statements
-elif boolean_expr:
+ไม่ก็ถ้า boolean_expr แล้ว
     statements
-else:
+ไม่ก็
     statements
 
 # While Statements
 fib_a, fib_b = 0, 1
-while fib_b < 10:
-    print(fib_b)
+ขณะที่ fib_b < 10:
+    แสดง(fib_b)
     fib_a, fib_b = fib_b, fib_a + fib_b
 
 # For Statements
-for var_iter in var_array:
+สำหรับ var_iter ใน var_array:
     statements
